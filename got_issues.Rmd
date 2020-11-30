@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-## Step 1: Explring `storms` data
+## Step 1: Exploring `storms` data
 
 The `storms` data are built-in to the `dplyr` package..
 
@@ -29,10 +29,11 @@ names(storms)
 ggplot(data = storms, aes(x = category, y = pressure)) +
   geom_jitter(width = 0.1, 
               alpha = 0.5,
-              aes(color = category),
+              color = "blue",
               show.legend = FALSE) +
-  labs(x = "StorM CategorRY", 
-       y = "Air pressure at storm center (millibars)"
+  labs(x = "Storm CategorrY", 
+       y = "Air pressure at storm center (millibars)", title 
+       = "This is hard"
        ) +
   theme_bw()
 ```
